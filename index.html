@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>WDD 131: Dynamic Web Fundamentals - Ornela Mbanga</title>
+  <meta name="description" content="WDD 131 course work, Ornela Mbanga, HTML CSS JavaScript"/>
+  <meta name="author" content="Ornela Mbanga"/>
+  <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/base.css"/>
+  <script src="scripts/getdates.js" defer></script>
+</head>
+
+<body>
+  <header>
+    <h1>WDD 131: Dynamic Web Fundamentals - <span class="highlight">Ornela Mbanga</span></h1>
+    <nav>
+      <a href="https://www.linkedin.com/" target="_blank">LinkedIn</a>
+      <a href="https://byupw.instructure.com/" target="_blank">Canvas</a>
+      <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/3?lang=eng&id=p7#p7" target="_blank">Scripture</a>
+      <a href="#" target="_blank">Final Project</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="card about-me">
+      <h2>About Me</h2>
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            My name is Ornela Mbanga, and I'm a student learning web development.
+            I joined this course to gain skills in HTML, CSS, and JavaScript so I can create modern websites.
+            I come from Congo-Brazzaville and I'm passionate about technology and creativity.
+          </p>
+        </div>
+        <img src="images/photo.jpg" alt="Ornela Mbanga" class="profile-img" height="200">
+      </div>
+
+      <h3>Congo-Brazzaville</h3>
+      <hr/>
+      <div class="location">
+        <figure>
+          <img src="images/congo-flag.png" alt="Flag of Congo-Brazzaville">
+          <figcaption><em>Official Flag of Congo-Brazzaville</em></figcaption>
+        </figure>
+        <p>
+          Congo-Brazzaville, my home, is a beautiful country in Central Africa known for its vibrant culture and stunning natural landscapes, from lush rainforests to mighty rivers.
+          The people here are warm and proud of their rich traditions.
+          I feel very fortunate to come from such a place full of history and hope.
+          Sharing the beauty and spirit of Congo-Brazzaville motivates me every day in my journey.
+        </p>
+      </div>
+    </section>
+
+    <section class="card resources">
+      <h2>My Web Dev Resources</h2>
+      <ul>
+        <li><a href="https://developer.mozilla.org/" target="_blank">MDN Web Docs</a></li>
+        <li><a href="https://www.freecodecamp.org/" target="_blank">freeCodeCamp</a></li>
+        <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+        <li><a href="https://stackoverflow.com/" target="_blank">Stack Overflow</a></li>
+        <li><a href="https://codepen.io/" target="_blank">CodePen</a></li>
+        <li><a href="https://chat.openai.com/" target="_blank">ChatGPT</a></li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> 🌼 Ornela Mbanga 🌼 Congo-Brazzaville</p>
+    <p id="lastModified">Last modified: <span id="modDate"></span></p>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,137 @@
+:root {
+  --primary-color: #dc1e2b;       /* Red */
+  --secondary-color: #0b8345;     /* Green */
+  
+  --highlight-color: #fcd116; 
+  --text-color: #222;
+  --bg-color: #fff;
+  --card-bg: rgba(255, 255, 255, 0.95);
+  --border-radius: 10px;
+  --shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', 'Roboto', sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+header {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  position: relative;
+}
+
+/* Hero Section */
+.hero picture,
+.hero img {
+  width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 2rem;
+}
+
+.image-overlay {
+  position: relative;
+  width: 100%;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.image-overlay img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--border-radius);
+}
+
+.image-overlay {
+  position: relative;
+  width: 100%;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  margin-bottom: 2rem;
+  overflow: hidden;
+}
+
+.image-overlay img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: var(--border-radius);
+}
+
+.overlay-box {
+  position: absolute;
+  top: 20px;
+  width: 40%;
+  padding: 1rem;
+  background-color:white;
+  color: black;
+  border-radius: var(--border-radius);
+  box-shadow: var(--shadow);
+  font-size: 1rem;
+  font-family: 'Poppins', sans-serif;
+}
+
+.data-box {
+  left: 20px;
+}
+
+.weather-box {
+  right: 20px;
+  text-align: left;
+}
+
+
+
+.data-box {
+  left: 20px;
+}
+
+.weather-box {
+  right: 20px;
+  text-align: left;
+}
+
+
+/* Footer */
+footer {
+  background-color: var(--primary-color);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 2rem;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .hero,
+  .image {
+    grid-column: 1 / 3;
+  }
+}
