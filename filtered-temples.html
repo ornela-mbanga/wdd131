@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>WDD 131: Temple Album - Ornela Mbanga</title>
+  <meta name="description" content="WDD 131 coursework, Ornela Mbanga, HTML CSS JavaScript" />
+  <meta name="author" content="Ornela Mbanga" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap"
+    rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles/filtered-temples.css" />
+  <!-- Larger screen CSS -->
+  <link
+    rel="stylesheet"
+    href="styles/filtered-temples-large.css"
+    media="screen and (min-width: 640px)" />
+  <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <h1>Temple Album</h1>
+    <button id="menu-toggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="menu">☰</button>
+    <nav class="navigation" id="menu" role="navigation" aria-label="Temple filters">
+      <a href="#" data-filter="all">Home</a>
+      <a href="#" data-filter="old">Old</a>
+      <a href="#" data-filter="new">New</a>
+      <a href="#" data-filter="large">Large</a>
+      <a href="#" data-filter="small">Small</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Home</h2>
+    <section id="temple-cards" aria-live="polite" aria-label="List of temple cards"></section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="currentyear"></span> 🌼 2025 Ornela Mbanga 🌼 Congo-Brazzaville</p>
+    <p>Last modified: <span id="lastmodified"></span></p>
+  </footer>
+</body>
+</html>
