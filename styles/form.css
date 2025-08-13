@@ -48,15 +48,15 @@ input[type="submit"] {
   margin-top: 1.5rem;
   padding: 0.7rem;
   font-size: 1.1rem;
-  background-color: #003366;
-  color: white;
+  background-color: #101010;
+  color: lab(96.99% 2 0.7);
   border: none;
   border-radius: 6px;
   cursor: pointer;
 }
 
 input[type="submit"]:hover {
-  background-color: #0055aa;
+  background-color: hsl(0, 0%, 3%);
 }
 
 fieldset {

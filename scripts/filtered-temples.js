@@ -1,4 +1,4 @@
-// Array of temples (example data, adjust images and info accordingly)
+// Array of temples (example data)
 const temples = [
   {
     name: "Accra Temple",
@@ -29,7 +29,7 @@ const temples = [
     location: "Kirtland, Ohio, USA",
     dedicated: "1836-03-27",
     area: 2600,
-    imageUrl: "images/kirtland-temple-.webp",
+    imageUrl: "images/kirtland-temple.webp",
     altText: "Kirtland Temple"
   },
   {
@@ -74,45 +74,7 @@ const temples = [
   }
 ];
 
-// Function to create and display temple cards
-function displayTemples(filteredTemples) {
-  const container = document.getElementById('temple-cards');
-  container.innerHTML = ''; // clear existing content
-
-  filteredTemples.forEach(temple => {
-    const card = document.createElement('figure');
-
-    const img = document.createElement('img');
-    img.src = temple.imageUrl;
-    img.alt = temple.altText;
-    img.loading = 'lazy'; // native lazy loading
-    card.appendChild(img);
-
-    const caption = document.createElement('figcaption');
-    caption.textContent = `${temple.name} — ${temple.location} — Dedicated on ${new Date(temple.dedicated).toLocaleDateString()} — Area: ${temple.area.toLocaleString()} sq ft`;
-    card.appendChild(caption);
-
-    container.appendChild(card);
-  });
-}
-
-// Function to filter temples based on selection
-function filterTemples(filter) {
-  switch (filter) {
-    case 'old':
-      return temples.filter(t => new Date(t.dedicated).getFullYear() < 1900);
-    case 'new':
-      return temples.filter(t => new Date(t.dedicated).getFullYear() > 2000);
-    case 'large':
-      return temples.filter(t => t.area > 90000);
-    case 'small':
-      return temples.filter(t => t.area < 10000);
-    default:
-      return temples;
-  }
-}
-
-// Display temples dynamically
+// Function to display temple cards
 function displayTemples(filteredTemples) {
   const container = document.getElementById('temple-cards');
   container.classList.add('temples-grid');
@@ -157,7 +119,7 @@ function displayTemples(filteredTemples) {
   
 }
 
-// Filter temples by category
+// Function to filter temples by category
 function filterTemples(filter) {
   switch (filter) {
     case 'old':

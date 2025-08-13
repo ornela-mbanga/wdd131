@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Product Review Form</title>
-  <link rel="stylesheet" href="styles/form.css" />
+  <link rel="stylesheet" href="styles/form.css">
 </head>
 <body>
   <header>
@@ -14,33 +14,33 @@
   <main>
     <form method="get" action="review.html">
       <!-- Product Name -->
-      <label for="productName">Product Name <span aria-label="required">*</span></label>
-      <select id="productName" name="productName" required>
+      <label for="productName">Product Name <span class="required">*</span></label>
+      <select id="productName" name="productName" required aria-required="true">
         <option value="" disabled selected>Select a Product ...</option>
-        <!-- Options will be added dynamically -->
+        <!-- Options will be added dynamically via JS -->
       </select>
 
       <!-- Overall Rating -->
       <fieldset>
-        <legend>Overall Rating <span aria-label="required">*</span></legend>
-        <label for="rating1"><input type="radio" id="rating1" name="rating" value="1" required />☆</label>
-        <label for="rating2"><input type="radio" id="rating2" name="rating" value="2" />☆☆</label>
-        <label for="rating3"><input type="radio" id="rating3" name="rating" value="3" />☆☆☆</label>
-        <label for="rating4"><input type="radio" id="rating4" name="rating" value="4" />☆☆☆☆</label>
-        <label for="rating5"><input type="radio" id="rating5" name="rating" value="5" />☆☆☆☆☆</label>
+        <legend>Overall Rating <span class="required">*</span></legend>
+        <label for="rating1"><input type="radio" id="rating1" name="rating" value="1" required>☆</label>
+        <label for="rating2"><input type="radio" id="rating2" name="rating" value="2">☆☆</label>
+        <label for="rating3"><input type="radio" id="rating3" name="rating" value="3">☆☆☆</label>
+        <label for="rating4"><input type="radio" id="rating4" name="rating" value="4">☆☆☆☆</label>
+        <label for="rating5"><input type="radio" id="rating5" name="rating" value="5">☆☆☆☆☆</label>
       </fieldset>
 
       <!-- Date of Installation -->
-      <label for="installDate">Date of Installation <span aria-label="required">*</span></label>
-      <input type="date" id="installDate" name="installDate" required />
+      <label for="installDate">Date of Installation <span class="required">*</span></label>
+      <input type="date" id="installDate" name="installDate" required aria-required="true">
 
       <!-- Useful Features -->
       <fieldset>
         <legend>Useful Features (check all that apply)</legend>
-        <label for="featureDurability"><input type="checkbox" id="featureDurability" name="features" value="Durability" /> Durability</label><br>
-        <label for="featureEase"><input type="checkbox" id="featureEase" name="features" value="Ease of Use" /> Ease of Use</label><br>
-        <label for="featureDesign"><input type="checkbox" id="featureDesign" name="features" value="Design" /> Design</label><br>
-        <label for="featurePrice"><input type="checkbox" id="featurePrice" name="features" value="Price" /> Price</label>
+        <label for="featureDurability"><input type="checkbox" id="featureDurability" name="features" value="Durability"> Durability</label><br>
+        <label for="featureEase"><input type="checkbox" id="featureEase" name="features" value="Ease of Use"> Ease of Use</label><br>
+        <label for="featureDesign"><input type="checkbox" id="featureDesign" name="features" value="Design"> Design</label><br>
+        <label for="featurePrice"><input type="checkbox" id="featurePrice" name="features" value="Price"> Price</label>
       </fieldset>
 
       <!-- Written Review (optional) -->
@@ -49,20 +49,20 @@
 
       <!-- User Name -->
       <label for="userName">Your Name</label>
-      <input type="text" id="userName" name="userName" placeholder="Optional" />
+      <input type="text" id="userName" name="userName" placeholder="Optional">
 
       <!-- Submit Button -->
-      <input type="submit" value="post Review" />
+      <input type="submit" value="Post Review">
     </form>
   </main>
 
   <footer>🌼 2025 Ornela Mbanga 🌼 Congo-Brazzaville
     <p>&copy; <span id="year"></span> | Last Modified: <span id="lastModified"></span></p>
     <script src="scripts/form.js"></script>
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-    document.getElementById('lastModified').textContent = document.lastModified;
-  </script>
+    <script>
+      document.getElementById('year').textContent = new Date().getFullYear();
+      document.getElementById('lastModified').textContent = document.lastModified;
+    </script>
   </footer>
 </body>
 </html>
