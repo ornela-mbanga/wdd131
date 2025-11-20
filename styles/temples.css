@@ -8,9 +8,10 @@
 body {
   font-family: 'Roboto Condensed', sans-serif;
   line-height: 1.6;
-  background-color: #f9f9f9; /* fond clair */
-  color: white;
+  background-color: #f9f9f9;
+  color: #222; /* au lieu de white */
 }
+
 
 /* Header */
 header {
@@ -37,15 +38,20 @@ header h1 {
 
 /* Navigation */
 .navigation {
-  display: none;
+  display: none; /* hidden by default */
   flex-direction: column;
-  background-color:  #244C74;
+  background-color: #244C74;
   padding: 1rem 0;
   text-align: center;
 }
 
+.navigation.show {
+  display: flex; /* visible when active */
+}
+
+
 .navigation a {
-  color: white;
+  color: #ffffff; /* standardized to hex */
   text-decoration: none;
   padding: 0.75rem;
   display: block;
@@ -53,12 +59,7 @@ header h1 {
 }
 
 .navigation a:hover {
-  background-color: #555;
-}
-
-/* Show navigation when active */
-.navigation.show {
-  display: flex;
+  background-color: #555555; /* standardized to hex */
 }
 
 /* Main content */

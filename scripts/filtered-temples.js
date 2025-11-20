@@ -5,7 +5,7 @@ const temples = [
     location: "Accra, Ghana",
     dedicated: "2004-01-09",
     area: 45000,
-    imageUrl: "images/accra-temple.webp",
+    imageUrl: "images/accra-temple-2.webp",
     altText: "Accra Temple in Ghana"
   },
   {
