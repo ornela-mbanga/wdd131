@@ -32,11 +32,6 @@ header {
 header h1 {
   font-size: 2rem;
 }
-
-header h1::after {
-  content: " "; /* ::after required by audit */
-}
-
 /* Hamburger menu */
 #menuBtn {
   display: block;
@@ -50,7 +45,7 @@ header h1::after {
 
 /* Navigation */
 .navigation {
-  display: flex;              /* Flexbox required by audit */
+  display: none;                 /* hidden by default */
   flex-direction: column;
   background-color: var(--primary-color);
   padding: 1rem 0;
@@ -59,7 +54,7 @@ header h1::after {
 }
 
 .navigation.show {
-  visibility: visible;        /* visible when active */
+  display: flex;                 /* Flexbox activated when visible */
 }
 
 
@@ -139,7 +134,7 @@ footer span {
   }
 
   .navigation {
-    visibility: visible;
+    display: flex;
     flex-direction: row;
     justify-content: center;
   }
@@ -153,5 +148,6 @@ footer span {
     grid-template-columns: repeat(3, 1fr);
   }
 }
+
 
 
