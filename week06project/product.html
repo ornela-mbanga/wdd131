@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Products</title>
-  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/style.css" />
   <script defer src="scripts/main.js"></script>
 </head>
 <body>
@@ -12,7 +12,7 @@
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="products.html">Products</a></li>
+        <li><a href="product.html">Products</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -21,9 +21,54 @@
   <main>
     <h1>Our Cosmetic Products</h1>
     <div class="gallery">
-      <img src="images/product1.jpg" alt="Product 1" id="galleryImg" loading="lazy">
+      <img src="images/products.jpg" alt="products" id="galleryImg" loading="lazy" />
       <button id="nextBtn">Next Product</button>
     </div>
+
+    <!-- Section with multiple products -->
+    <section class="products-list">
+      <div class="product-feature">
+        <img src="images/product1.jpg" alt="Lipstick" loading="lazy" />
+        <h2>Lipstick</h2>
+        <p>Price: $29</p>
+        <button id="addCart1">Add to Cart</button>
+      </div>
+
+      <div class="product-feature">
+        <img src="images/product2.jpg" alt="Makeup Palette" loading="lazy" />
+        <h2>Makeup Palette</h2>
+        <p>Price: $49</p>
+        <button id="addCart2">Add to Cart</button>
+      </div>
+
+      <div class="product-feature">
+        <img src="images/product3 .jpg" alt="Face Cream" loading="lazy" />
+        <h2>Face Cream</h2>
+        <p>Price: $39</p>
+        <button id="addCart3">Add to Cart</button>
+      </div>
+
+      <div class="product-feature">
+        <img src="images/product4.jpg.jpg" alt="Mascara" loading="lazy" />
+        <h2>Mascara</h2>
+        <p>Price: $35</p>
+        <button id="addCart4">Add to Cart</button>
+      </div>
+
+      <div class="product-feature">
+        <img src="images/product5.jpg.jpg" alt="Blush" loading="lazy" />
+        <h2>Blush</h2>
+        <p>Price: $25</p>
+        <button id="addCart5">Add to Cart</button>
+      </div>
+
+      <div class="product-feature">
+        <img src="images/product6.jpg.jpg" alt="Foundation" loading="lazy" />
+        <h2>Foundation</h2>
+        <p>Price: $45</p>
+        <button id="addCart6">Add to Cart</button>
+      </div>
+    </section>
   </main>
 
   <footer>
